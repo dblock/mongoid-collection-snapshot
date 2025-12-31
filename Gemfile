@@ -16,7 +16,9 @@ else
 end
 
 group :development, :test do
-  gem 'mongoid-danger', '~> 0.1.1'
+  gem 'danger'
+  gem 'danger-changelog', require: false
+  gem 'danger-pr-comment', require: false
   gem 'rake'
   gem 'rspec', '~> 3.1'
   gem 'rubocop', '0.47.1'
